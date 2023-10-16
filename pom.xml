@@ -14,7 +14,7 @@
         <module>customer-api</module>
         <module>employee-api</module>
         <module>broker-api</module>
-        <module>Test</module>
+        <module>eureka-server</module>
     </modules>
 
     <properties>
@@ -33,18 +33,18 @@
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>3.1.4</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2022.0.3</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <dependency>
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
                 <version>2.1.214</version>
                 <scope>runtime</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.18.30</version>
-                <optional>true</optional>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
